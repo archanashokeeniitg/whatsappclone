@@ -34,6 +34,8 @@ const styles = StyleSheet.create({
      },
      time :{
          color : "gray",
+         justifyContent : "space-around",
+         fontSize : 12
      }
 
 })

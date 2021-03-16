@@ -20,7 +20,7 @@ export default {
 	}, {
 		id: 'm2',
 		content: 'I am good, good',
-		createdAt: '2020-10-03T14:49:00.000Z',
+		createdAt: '2020-16-03T14:49:00.000Z',
 		user: {
 			id: 'u2',
 			name: 'Lukas',

@@ -5,6 +5,7 @@ import ChatMessages from '../components/ChatMessages';
 import  ChatRoomData from '../data/Chats'
 import { FlatList } from 'react-native-gesture-handler';
 import BG from "../data/BG.png"
+import InputBox from "../components/InputBox"
 
 
 const ChatRoomScreen = (props) => {
@@ -15,7 +16,6 @@ const ChatRoomScreen = (props) => {
     console.log("Proppppps", props)
     return (
       <ImageBackground  source = {BG} style = {{width: "100%" , height : "100%"}}>
-            <Text>Chatttrroom</Text>
             <FlatList
       style = {{width :"100%" }}
         data={ChatRoomData.messages}
@@ -23,6 +23,7 @@ const ChatRoomScreen = (props) => {
         keyExtractor={(item) => item.id}
         inverted 
       />
+      <InputBox />
       </ImageBackground>
            
     )

@@ -19,6 +19,7 @@ const ChatRoomScreen = (props) => {
         data={ChatRoomData.messages}
         renderItem={({item}) => <ChatMessages  messages = {item} />}
         keyExtractor={(item) => item.id}
+        inverted 
        // extraData={selectedId}
       />
            

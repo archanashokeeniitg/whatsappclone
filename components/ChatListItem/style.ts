@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
          color : "gray"
      },
      time :{
-         color : "gray"
+         color : "gray",
      }
 
 })

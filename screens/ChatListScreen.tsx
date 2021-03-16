@@ -1,15 +1,18 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
 import { Text, View } from '../components/Themed';
+import { FlatList, SafeAreaView, StatusBar, StyleSheet, TouchableOpacity } from "react-native";
 import ChatListItem from "../components/ChatListItem"
 import ChatRooms from "../data/ChatRooms"
 
 export default function ChatListScreen() {
   return (
     <View style={styles.container}>
-      <ChatListItem  chatRoom = {ChatRooms[0]} />
-      
-      <Text>hiii</Text>
+      <FlatList
+        data={ChatRooms}
+        renderItem={({item}) => <ChatListItem  chatRoom = {item} />}
+        keyExtractor={(item) => item.id}
+       // extraData={selectedId}
+      />
       
      
     </View>

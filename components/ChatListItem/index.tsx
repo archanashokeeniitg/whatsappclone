@@ -19,7 +19,7 @@ export type ChatListItemProps ={
         <View style = {styles.midContainer}>
         <Text style = {styles.userName}> {user.name}</Text>
             <Text style={styles.lastMessage}> {chatRoom.lastMessage.content}</Text>
-            <Text style={styles.lastMessage}> {chatRoom.lastMessage.createdAt}</Text>
+            <Text style={styles.time}> {chatRoom.lastMessage.createdAt}</Text>
             </View>
             <Text style = {styles.time}>
                 Yesterday

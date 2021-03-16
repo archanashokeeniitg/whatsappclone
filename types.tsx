@@ -9,7 +9,10 @@ export type MainTabParamList = {
   Status: undefined;
   Calls: undefined;
 };
+// export type ChatRoom = {
+//   ChatRoomScreen = undefined;
 
+// };
 
 export type TabOneParamList = {
   ChatListScreen: undefined;

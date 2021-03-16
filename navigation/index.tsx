@@ -8,7 +8,8 @@ import { Entypo } from '@expo/vector-icons';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
-import BottomTabNavigator from './BottomTabNavigator';
+//import BottomTabNavigator from './MainTabNavigator';
+import MainTabNavigator from './MainTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 
 // If you are not familiar with React Navigation, we recommend going through the
@@ -29,8 +30,8 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: true , headerStyle : { backgroundColor : Colors.light.tint}, headerTintColor : Colors.light.background , headerTitleAlign : 'left' }}>
-      <Stack.Screen name="Root" component={BottomTabNavigator} options={{ title: 'WhatsApp' , headerRight: () => <View style={{flexDirection : 'row' , width : 60, justifyContent : 'space-between' , marginRight : 20}}><AntDesign name="search1" size={24} color="white" /><Entypo name="dots-three-vertical" size={24} color="white" /></View>}}  />
+    <Stack.Navigator screenOptions={{ headerShown: true , headerStyle : { backgroundColor : Colors.light.tint, shadowOpacity : 0}, headerTintColor : Colors.light.background , headerTitleAlign : 'left' }}>
+      <Stack.Screen name="Root" component={MainTabNavigator} options={{ title: 'WhatsApp' , headerRight: () => <View style={{flexDirection : 'row' , width : 60, justifyContent : 'space-between' , marginRight : 20 , }}><AntDesign name="search1" size={24} color="white" /><Entypo name="dots-three-vertical" size={24} color="white" /></View>}}  />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );

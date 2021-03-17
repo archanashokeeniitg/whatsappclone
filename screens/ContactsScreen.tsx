@@ -1,21 +1,26 @@
 import * as React from 'react';
 import { Text, View } from '../components/Themed';
 import { FlatList, SafeAreaView, StatusBar, StyleSheet, TouchableOpacity } from "react-native";
-import ChatListItem from "../components/ChatListItem"
-import ChatRooms from "../data/ChatRooms"
- import NewMessageButton from "../components/NewMessageButton"
+import Users from "../data/Users"
+import ContactsListItem from '../components/ContactsListItem';
 
-export default function ChatListScreen() {
+ 
+
+export default function ContactsScreen() {
+    
   return (
     <View style={styles.container}>
+        <Text>
+            Contacsssss
+        </Text>
+
       <FlatList
       style = {{width :"100%" }}
-        data={ChatRooms}
-        renderItem={({item}) => <ChatListItem  chatRoom = {item} />}
+        data={Users}
+       renderItem={({item}) => <ContactsListItem  contacts = {item} />}
         keyExtractor={(item) => item.id}
-       // extraData={selectedId}
       />
-      <NewMessageButton />
+
      
     </View>
   );

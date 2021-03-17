@@ -13,7 +13,6 @@ export default function ChatListScreen() {
         data={ChatRooms}
         renderItem={({item}) => <ChatListItem  chatRoom = {item} />}
         keyExtractor={(item) => item.id}
-       // extraData={selectedId}
       />
       <NewMessageButton />
      

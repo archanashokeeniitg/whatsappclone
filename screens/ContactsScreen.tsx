@@ -10,9 +10,6 @@ export default function ContactsScreen() {
     
   return (
     <View style={styles.container}>
-        <Text>
-            Contacsssss
-        </Text>
 
       <FlatList
       style = {{width :"100%" }}
@@ -20,7 +17,6 @@ export default function ContactsScreen() {
        renderItem={({item}) => <ContactsListItem  contacts = {item} />}
         keyExtractor={(item) => item.id}
       />
-
      
     </View>
   );

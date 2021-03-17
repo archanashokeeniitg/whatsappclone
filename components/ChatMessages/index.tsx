@@ -23,7 +23,6 @@ const  ChatMessages= ( props :ChatMessageProps )=> {
 
             <Text>{messages.content}</Text>
          <Text style = {styles.time}>{moment(messages.createdAt).format('LT')}</Text> 
-        {/* <Text>{moment(messages.createdAt).format('LT')}</Text> */}
         </View>
         </View>
     )

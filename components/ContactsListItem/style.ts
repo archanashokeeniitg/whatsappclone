@@ -26,17 +26,12 @@ const styles = StyleSheet.create({
          fontWeight : "bold",
          fontSize :16
      },
-     rightContainer:{
-
-     },
-     lastMessage :{
-         color : "gray"
-     },
-     time :{
+     
+     aboutInfo :{
          color : "gray",
-         justifyContent : "space-around",
          fontSize : 12
-     }
+     },
+     
 
 })
 export default styles;

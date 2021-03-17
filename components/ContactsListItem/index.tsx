@@ -30,6 +30,7 @@ import Navigation from '../../navigation'
         <Image   source = {{uri : props.contacts.imageUri}} style= {styles.avatar}/>
         <View style = {styles.midContainer}>
         <Text style = {styles.userName}> {props.contacts.name}</Text>
+        <Text style = {styles.aboutInfo}> {props.contacts.aboutInfo}</Text>
              </View>
              </View>
            

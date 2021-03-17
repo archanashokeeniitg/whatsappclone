@@ -2,11 +2,12 @@ export default [{
   id: 'u1',
   name: 'Vadim',
   imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
-  status: "Hello there, how are you"
+  aboutInfo: "Hello there, how are you"
 }, {
   id: 'u2',
   name: 'Lukas',
   imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+  aboutInfo: "Hello there, how are you"
 }, {
   id: 'u3',
   name: 'Daniil',

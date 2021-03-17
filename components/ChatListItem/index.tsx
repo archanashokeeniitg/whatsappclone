@@ -18,7 +18,7 @@ export type ChatListItemProps ={
    const user =  chatRoom.users[1]
    const naviagtion = useNavigation()
    const OnClick = () =>{
-   console.warn(`clickkedddd on ${user.name}`)
+   //console.warn(`clickkedddd on ${user.name}`)
    naviagtion.navigate('ChatRoom' , {id : chatRoom.id , user : user.name})
    }
 
